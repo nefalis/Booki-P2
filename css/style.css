@@ -1,0 +1,513 @@
+/*******************police ecriture******************************/
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;600&display=swap');
+
+
+/****************** general **********************************/
+
+* {
+    font-family: "Raleway", sans-serif;
+}
+
+.container {
+    max-width: 1440px;
+    margin: auto;
+    padding: 0 40px;
+}
+
+/********************* navbar ***************************************/
+
+.navigation nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+}
+
+.navigation nav img {
+    width: 128px;
+    margin-right: auto;
+}
+
+.navigation nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    margin: 0px;
+}
+
+.navigation nav ul a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 18px;
+    font-weight: 550;
+    display: flex;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+    border-top: 2px solid transparent;
+    /*evite que ca bouge avec la souris*/
+}
+
+.navigation nav ul a:hover {
+    border-top: 2px solid #0065fc;
+    /*ligne bleu quand on passe dessus*/
+    color: #0065fc;
+}
+
+/*************** entete et barre recherche *************************/
+
+.container-search {
+    align-items: center;
+    display: flex;
+    border: 2px;
+    font-size: 18px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.container-heading h1 {
+    font-size: 24px;
+    font-weight: 700;
+
+}
+
+.container-search .fa-location-dot {
+    padding: 10px;
+    background-color: #f2f2f2;
+    border-radius: 16px 0 0 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 18px;
+}
+
+.container-search input {
+    border: 1px solid #f2f2f2;
+    width: 220px;
+    height: 33px;
+    overflow: hidden;
+    font-weight: bold;
+}
+
+.container-search ::placeholder {
+    color: black;
+    padding-left: 16px;
+}
+
+.container-search span {
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.container-search button {
+    border-radius: 0 16px 16px 0;
+    background-color: #0065FC;
+    height: 36px;
+    padding: 0px 20px;
+    cursor: pointer;
+    border: 1px solid #0065FC;
+}
+
+.container-search button i {
+    display: none;
+}
+
+/***************** barre filtres ******************/
+.container-filter {
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: bold;
+    align-items: center;
+    gap: 10px;
+}
+
+.container-filter .list-filter {
+    display: flex;
+}
+
+.container-filter .filter {
+    border: 2px solid #f2f2f2;
+    border-radius: 20px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin: 10px;
+    padding: 0px 16px 0px 0px;
+    gap: 10px;
+}
+
+.container-filter .filter:hover {
+    box-shadow: 2px 2px 4px gray;
+}
+
+.fa-money-bill-wave {
+    padding: 10px 10px 10px 10px;
+    border-radius: 50%;
+    color: #0065FC;
+    display: flex;
+    background-color: #DEEBFF;
+}
+
+.fa-child-reaching {
+    padding: 10px 10px 10px 10px;
+    border-radius: 50%;
+    color: #0065FC;
+    display: flex;
+    background-color: #DEEBFF;
+    width: 15px;
+    height: 16px;
+}
+
+.fa-heart {
+    padding: 10px 10px 10px 10px;
+    border-radius: 50%;
+    color: #0065FC;
+    display: flex;
+    background-color: #DEEBFF;
+}
+
+.fa-dog {
+    padding: 10px 10px 10px 10px;
+    border-radius: 50%;
+    color: #0065FC;
+    display: flex;
+    background-color: #DEEBFF;
+}
+
+.container-filter .filtre:nth-child(5) {
+    min-width: 190px;
+}
+
+.container-filter h2 {
+    margin-right: 10px;
+}
+
+/************ info *******************/
+.container-info {
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 25px;
+}
+
+.container-info .fa-info {
+    color: #0065FC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10px;
+    width: 11px;
+    padding: 10px;
+    border-radius: 100%;
+    border: 2px solid #f2f2f2;
+    margin-right: 15px;
+}
+
+/***************** commun hebergement et populaire ****************/
+.container-lodging {
+    display: flex;
+    gap: 16px;
+}
+
+/***etoile***/
+.container-lodging .blue {
+    color: #0065FC;
+    padding: 0.5px;
+}
+
+.container-lodging .gray {
+    color: #d9d9d9;
+    padding: 0.5px;
+}
+
+/************************* hebergement ***************/
+.container-marseille {
+    width: 65%;
+    background-color: #f2f2f2;
+    padding: 30px 30px 0px 30px;
+    border-radius: 16px;
+}
+
+.container-lodging h2 {
+    margin: 0px;
+    padding: 10px 10px 20px 0px;
+}
+
+.container-marseille .marseille-card {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.container-marseille article {
+    height: 230px;
+    border: 6px solid transparent;
+    background-color: white;
+    box-shadow: 0px 0px 16px rgb(209, 206, 206);
+    border-radius: 16px;
+    overflow: hidden;
+    flex: 1 0 25%;
+}
+
+.container-marseille a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: inherit;
+    height: 100%;
+}
+
+.container-marseille article:hover {
+    box-shadow: 0px 0px 13px 2px rgba(163,163,163,0.75);
+-webkit-box-shadow: 0px 0px 13px 2px rgba(163,163,163,0.75);
+-moz-box-shadow: 0px 0px 13px 2px rgba(163,163,163,0.75);
+}
+
+.container-marseille img {
+    height: 110px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.container-marseille .description-card {
+    height: 10px;
+    width: 100%;
+    padding: 10px;
+
+}
+
+.container-marseille h3 {
+    margin: 3px 0px 3px 0px;
+    font-size: 16px;
+}
+
+.container-marseille p {
+    margin: 3px 0px 3px 0px;
+    font-size: 13px;
+    padding-bottom: 15px;
+}
+
+.container-marseille .show-more {
+    padding: 20px;
+}
+
+/************ populaire *******************/
+.container-popular {
+    width: 35%;
+    background-color: #f2f2f2;
+    border-radius: 16px;
+    padding: 0px 30px 0px 30px;
+}
+
+.title-popular {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0px 5px 0px;
+}
+
+.title-popular h2 {
+    padding: 10px 10px 15px 0px;
+}
+
+.container-popular .popular-card {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.container-popular article {
+    height: 120px;
+    border: 6px solid transparent;
+    background-color: white;
+    box-shadow: 0px 0px 16px rgb(209, 206, 206);
+    border-radius: 16px;
+    overflow: hidden;
+    flex: 1 0 100%;
+
+}
+
+.container-popular a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: inherit;
+}
+
+.container-popular article:hover {
+    box-shadow: 0px 0px 13px 2px rgba(163,163,163,0.75);
+-webkit-box-shadow: 0px 0px 13px 2px rgba(163,163,163,0.75);
+-moz-box-shadow: 0px 0px 13px 2px rgba(163,163,163,0.75);
+}
+
+.container-popular img {
+    height: 100%;
+    width: 45%;
+    min-width: 45%;
+    object-fit: cover;
+}
+
+.container-popular .description-card {
+    height: 20%;
+    width: 100%;
+    padding: 6px;
+}
+
+.container-popular h3 {
+    margin: 3px 0px 3px 0px;
+    font-size: 16px;
+}
+
+.container-popular p {
+    margin: 3px 0px 5px 0px;
+    font-size: 13px;
+}
+
+.container-popular .popular-star {
+    padding-top: 51px;
+}
+
+/*************** activites ***********************/
+.container-activity {
+    padding-top: 30px;
+}
+
+.activity {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+.activity a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.activity img:hover {
+    box-shadow: 0px 0px 16px 2px rgb(48, 47, 47);
+-webkit-box-shadow: 0px 0px 16px 2px rgb(48, 47, 47);
+-moz-box-shadow: 0px 0px 16px 2px rgb(48, 47, 47);
+}
+
+.activity article {
+    width: 25%;
+    height: 500px;
+}
+
+.activity .double-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 32px;
+    height: 500PX;
+}
+
+.activity .simple-card {
+    width: 100%;
+    height: 500PX;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0px 0px 16px rgb(209, 206, 206);
+}
+
+.activity .medium-card {
+    width: 100%;
+    height: 60%;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0px 0px 16px rgb(209, 206, 206);
+}
+
+.activity .small-card {
+    width: 100%;
+    height: 40%;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0px 0px 16px rgb(209, 206, 206);
+}
+
+.activity .img-card {
+    width: 100%;
+    height: 80%;
+}
+
+.activity .img-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.activity .description-card {
+    padding: 20px 5px 10px 15px;
+    font-size: 12px;
+}
+
+.activity h2 {
+    margin: 0;
+    padding: 16px;
+}
+
+.activity h3 {
+    margin: 0;
+}
+
+.activity .small-card .img-card {
+    height: 67%;
+}
+
+.activity .tall-card .img-card {
+    height: 88%;
+}
+
+
+/************************* footer *****************/
+footer {
+    background-color: #f2f2f2;
+    padding: 30px 0px 30px 0px;
+}
+
+.footer {
+    display: flex;
+}
+
+.footer a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer a:hover {
+    color: gray;
+}
+
+.footer ul {
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+.footer li {
+    padding: 5px 0px 0px 0px;
+}
+
+.footer .about {
+    width: 30%;
+}
+
+.footer .our-accommodation {
+    width: 30%;
+}
+
+.footer .assistance {
+    width: 30%;
+}
